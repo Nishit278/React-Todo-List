@@ -2,15 +2,63 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-input {
+  outline: none;
+  border: 0.5px solid black;
+  border-radius: 19px;
+  text-indent: 14px;
+  width: 25rem;
+  height: 39px;
+}
+h1 {
+  background: rgb(129, 23, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(129, 23, 0, 1) 0%,
+    rgba(255, 170, 0, 1) 19%,
+    rgba(255, 239, 0, 1) 40%,
+    rgba(0, 255, 56, 1) 54%,
+    rgba(0, 146, 255, 1) 79%,
+    rgba(98, 0, 255, 1) 100%
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-group {
+  /* background-color: rgb(255, 255, 255); */
+  background: rgb(129, 23, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(129, 23, 0, 1) 0%,
+    rgba(255, 170, 0, 1) 19%,
+    rgba(255, 239, 0, 1) 40%,
+    rgba(0, 255, 56, 1) 54%,
+    rgba(0, 146, 255, 1) 79%,
+    rgba(98, 0, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+  align-items: center;
+  text-align: center;
+}
+.list-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgb(0, 26, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 26, 255, 1) 0%,
+    rgba(122, 0, 203, 1) 100%
+  );
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  width: 40%;
+  border-radius: 5px;
+  margin: 4px;
 }
 
 .App-header {
@@ -27,7 +75,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.btns {
+  float: right;
+}
+.btns > * {
+  margin-left: 7px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +88,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.completed {
+  text-decoration: line-through;
+  background: rgb(0, 26, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 26, 255, 0.479) 0%,
+    rgba(122, 0, 203, 0.404) 100%
+  );
+}
+
+body{
+  background: rgb(129,23,0);
+background: linear-gradient(90deg, rgba(129,23,0,1) 0%, rgba(255,170,0,1) 19%, rgba(255,239,0,1) 40%, rgba(0,255,56,1) 54%, rgba(0,146,255,1) 79%, rgba(98,0,255,1) 100%);
 }
